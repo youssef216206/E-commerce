@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header img{
+    margin: 0 20px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+.links li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.5s ease;
+}
+
+.linls li a i{
+    color: rgb(2, 2, 87);
+    font-size: 30px;
+}
+
+.links li a:hover,
+.linls li a.active{
+    color : #088178;
+}
+
+.links li a.active::after,
+.links li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    bottom: -4px;
+    left: 20px;
+    background-color: #088178;
+    position: absolute;
+}
+
+.links li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.5s ease;
+}
+
+.section-1  .banner1{
+    background-image: url("images/b1.jpg");
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: repeat;
+    width: 100%;
+    /* height: 100%; */
+    padding: 100px;
+    color: white;
+    text-align: center;
+
+
+}
+
+.section-1 h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.section-2{
+   margin: 60px ;
+   text-align: center;
+}
+.section-2 h2 ,
+.section-2 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.section-2 .card {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.section-2 .card:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.25);
+
+}
+
+.section-2 img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.section-2 .card-content {
+    padding: 20px;
+}
+
+.section-2 .card .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+
+.section-2 .des {
+    margin-left: 15px;
+}
+.section-2 .card .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.section-2 .card .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+.section-2 .card .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+.section-2 .card .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+.section-3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("images/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+.section-3 h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+.section-3 p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+.section-3 p span{
+    color: #ffbd27;
+}
+
+.section-3 .form{
+    display: flex;
+    width: 40%;
+}
+
+.section-3 input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s; 
+}
+
+.section-3 button{
+    background-color: #088178;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.section-3 button:hover{
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 80px;
+    margin: 40px 0;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
